@@ -11,7 +11,8 @@
     "base64.d.ts"
   ],
   "scripts": {
-    "test": "make clean && make test"
+    "test": "make clean && make test",
+    "es5": "cp base64.js base64.es6.js && tsc --allowJS --outFile base64.es5.js base64.es6.js"
   },
   "devDependencies": {
     "typescript": "^3.9.7",
